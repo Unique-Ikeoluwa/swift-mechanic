@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Adegbite Ikeoluwa">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Swift Mechanic</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: 'Poppins', sans-serif;
+            background: #f5f5f5;
+        }
+        .container{
+            margin: auto;
+            display: flex;
+        }
+        .logo{
+            margin-right: 250px;
+        }
+        header{
+            background: white;
+            padding: 20px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .btn1{
+            gap: 10px;
+        }
+        .login, .signup{
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .login{
+            background: #f5f0f0;
+            color: #333;
+        }
+        .signup{
+            background: #333;
+            color: white;
+        }
+        .body{
+            display: flex;
+            justify-content: space-between;
+            margin-right: 150px;
+            padding: 80px 0;
+            background: white;
+        }
+        .body-text{
+            width: 60%;
+        
+        }
+        .body-g1{
+            flex-direction: column;
+        }
+        ,.body-text h1{
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+        }
+        .body-text p{
+            font-size: 18px;
+            color: #555;
+        }
+        .get{
+            background: #333;
+            color: goldenrod;
+            padding: 12px 25px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 8px;
+
+        }
+        .body-image img{
+            width: 300px;
+        }
+        .body1{
+            background: white;
+            padding: 80px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .body1-image img{
+            width: 150px;
+            margin: 10px;
+        }
+        .everyevery{
+            flex-direction: column;
+            margin-top: 80px;
+            margin-left: 350px;
+        }
+        .body1-text{
+            width: 65%;
+        }
+        .body1-text h2{
+            font-size: 30px;
+            color: #333;
+        }
+        .body1-text p{
+            font-size: 15px;
+            color: #555;
+        }
+        
+        .appstore, .playstore{
+            background: black;
+            color: goldenrod;
+            padding: 12px 25px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 30px;
+            border-radius: 8px;
+        }
+        span{
+            color: white;
+        }
+        footer{
+            background: #0c7467;
+            color: white;
+            padding: 40px 0;
+        }
+        .footer1{
+            margin-left: 320px;
+        }
+        .footer1 h3{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .footer1 ul{
+            list-style: none;
+            padding: 0;
+        }
+        .footer1 ul li{
+            margin: 5px 0;
+        }
+        .footer1 ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 14px;
+        }
+        .footer-logo img{
+            filter: grayscale(100%) brightness(0%);
+        }
+        .footer-bottom{
+            text-align: center;
+            font-size: 14px;
+            position: relative;
+            padding: 20px;
+            border: none;
+        }
+        .footer-bottom::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 320px;
+            width: 65%;
+            height: 1px;
+            background-color: white;
+        
+     
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo_mechanic.jpeg">Swift Mechanic
+            </div>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Vehicle Owner</a></li>
+                    <li><a href="#">Mechanic</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+            <div class="btn1">
+                <button class="login">Login</button>
+                <button class="signup">Signup</button>
+            </div>
+        </div>
+    </header>
+    <section class="body">
+        <div class="container">
+            <div class="body-g1">
+                <div class="body-text">
+                    <h1>Reliable Auto Repairs Anytime, Anywhere.</h1>
+                    <p><small>Fix your car anywhere, anytime, swiftly</small></p>
+                </div>
+                <div class="btn2">
+                    <button class="get">Get Started</button> Already have an account? Sign in
+                </div>
+            </div>
+            <div class="body-image">
+                <img src="image-mechanic.jpeg" alt="phone image">
+            </div>
+        </div>
+    </section>
+    <section class="body1">
+        <div class="container">
+            <div class="body1-image">
+                <img src="image_mechanic.jpeg" alt="human image">
+            </div>
+            <div class="everyevery">
+                <div class="body1-text">
+                    <h2>It's easier in the apps</h2>
+                    <p><small>Our app is ready for both platforms, you can download app for both android and ios</small></p>
+                </div>
+                <div class="btn3">
+                    <button class="appstore"><img src="social-apple-svgrepo-com.svg" height="18px" width="20px"><p><small>Download on the <span>App store</span></small></p></button>
+                    <button class="playstore"><img src="google-play-icon-svgrepo-com.svg" height="20px" width="23px"><p><small> Get it on <span>Google play</span></small></p></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer1">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About SWIFT MECHANIC</a></li>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">Press & Media</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer1">
+                <div class="footer2">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Mechanic Platform</a></li>
+                        <li><a href="#">Vehicle Owners Platform</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer1">
+                <div class="footer2">
+                    <h3>Get in touch</h3>
+                    <p>support@swiftmechanic.co<br>info@swiftmechanic.co</p><br>
+                    <p>Jos, Plateau State Nigeria</p><br>
+                    <p>+234|0|9032621846<br>+234|0|8185991314</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="logo_mechanic-removebg-preview.png" alt="footer-logo">
+            </div>
+            <div class="footer-text">
+                <h3>Terms of services| Privacy Policy</h3>
+                <p>2024 SWIFT MECHANIC. All rights reserved. Max.ng is a registered trademark of SWIFT MECHANIC. All other marks, names, and logos mentioned herein are the property of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
